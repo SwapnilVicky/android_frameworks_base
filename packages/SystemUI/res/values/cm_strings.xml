@@ -146,4 +146,7 @@
     <string name="quick_settings_reboot_label">Reboot</string>
     <string name="quick_settings_reboot_recovery_label">Recovery</string>
     <string name="quick_settings_poweroff_label">Power off</string>
+
+    <!-- Channel name for Battery notifications -->
+    <string name="battery_notification_channel_tv">Battery warning</string>
 </resources>
