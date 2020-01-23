@@ -465,7 +465,6 @@ public class BatteryMeterView extends LinearLayout implements
                 mBatteryPercentView = null;
             }
         }
-        updatePercentText();
     }
 
     @Override
