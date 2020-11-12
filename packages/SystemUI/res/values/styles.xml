@@ -800,4 +800,12 @@
           * Title: headline, medium 20sp
           * Message: body, 16 sp -->
     <style name="Theme.ControlsRequestDialog" parent="@*android:style/Theme.DeviceDefault.Dialog.Alert"/>
+
+    <!-- Reticker -->
+     <style name="TextAppearance.Notifications.reTicker" parent="@*android:style/TextAppearance.StatusBar.Icon">
+         <item name="android:textSize">14dp</item>
+         <item name="android:fontFamily">@*android:string/config_bodyFontFamily</item>
+         <item name="android:textColor">?android:attr/textColorPrimary</item>
+     </style>
+
 </resources>

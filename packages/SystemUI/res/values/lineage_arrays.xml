@@ -94,4 +94,15 @@
         <item>@string/text_clock_m_fifty_eight</item>
         <item>@string/text_clock_m_fifty_nine</item>
     </string-array>
+
+    <!-- Reticker -->
+    <string-array name="app_exceptions" translatable="false">
+        <item>org.kde.kdeconnect_tp</item>
+        <item>#FF808080</item>
+        <item>com.instagram.android</item>
+        <item>#FF833AB4</item>
+        <item>com.google.android.dialer</item>
+        <item>#FF2162D7</item>
+    </string-array>
+
 </resources>
