@@ -65,6 +65,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 import javax.crypto.SecretKey;
+import com.android.internal.util.custom.PixelPropsUtils;
 
 /**
  * A java.security.KeyStore interface for the Android KeyStore. An instance of
@@ -113,6 +114,7 @@ public class AndroidKeyStoreSpi extends KeyStoreSpi {
 
     @Override
     public Certificate[] engineGetCertificateChain(String alias) {
+        PixelPropsUtils.onEngineGetCertificateChain();
         if (alias == null) {
             throw new NullPointerException("alias == null");
         }
