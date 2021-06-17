@@ -29,6 +29,7 @@ import android.content.om.OverlayInfo;
 import android.view.IWindowManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.app.IUiModeManager;
 import android.os.SystemProperties;
 import android.view.WindowManagerGlobal;
 import android.util.DisplayMetrics;
@@ -178,4 +179,15 @@ public class forkUtils {
         return result > Math.round(px);
     }
 
+    // Check if system is in dark mode
+    public static boolean isDarkMode() {
+        IUiModeManager uiModeManager = IUiModeManager.Stub.asInterface(
+                    ServiceManager.getService(Context.UI_MODE_SERVICE));
+        try {
+            return uiModeManager.getNightMode() == 2;
+        } catch (android.os.RemoteException e) {
+            // assume light mode
+            return false;
+        }
+    }
 }
