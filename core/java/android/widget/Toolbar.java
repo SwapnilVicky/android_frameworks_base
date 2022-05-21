@@ -244,7 +244,7 @@ public class Toolbar extends ViewGroup {
         mSubtitleTextAppearance = a.getResourceId(R.styleable.Toolbar_subtitleTextAppearance, 0);
         mNavButtonStyle = a.getResourceId(R.styleable.Toolbar_navigationButtonStyle, 0);
         mGravity = a.getInteger(R.styleable.Toolbar_gravity, mGravity);
-        mButtonGravity = a.getInteger(R.styleable.Toolbar_buttonGravity, Gravity.CENTER_VERTICAL);
+        mButtonGravity = a.getInteger(R.styleable.Toolbar_buttonGravity, Gravity.TOP);
         mTitleMarginStart = mTitleMarginEnd = mTitleMarginTop = mTitleMarginBottom =
                 a.getDimensionPixelOffset(R.styleable.Toolbar_titleMargin, 0);
 
