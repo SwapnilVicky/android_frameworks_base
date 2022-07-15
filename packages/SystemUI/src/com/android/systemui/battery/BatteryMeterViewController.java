@@ -140,7 +140,6 @@ public class BatteryMeterViewController extends ViewController<BatteryMeterView>
         mCurrentUserTracker.startTracking();
 
         mView.updateShowPercent();
-        mView.updateBatteryMeterVisibility();
     }
 
     @Override
