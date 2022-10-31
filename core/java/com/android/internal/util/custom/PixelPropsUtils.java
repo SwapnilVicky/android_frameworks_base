@@ -106,10 +106,6 @@ public class PixelPropsUtils {
             "com.tencent.tmgp.sgame"
     };
 
-    private static ArrayList<String> allProps = new ArrayList<>(Arrays.asList("BRAND", "MANUFACTURER", "DEVICE", "PRODUCT", "MODEL", "FINGERPRINT"));
-
-    private static volatile boolean sIsGms = false;
-
     static {
         propsToChange = new HashMap<>();
         propsToChange.put("BRAND", "google");
