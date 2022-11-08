@@ -89,9 +89,7 @@ public class PixelPropsUtils {
             "redfin",
             "barbet",
             "bramble",
-            "sunfish",
-            "coral",
-            "flame"
+            "sunfish"
     };
 
     private static final Map<String, Object> propsToChangeROG1;
